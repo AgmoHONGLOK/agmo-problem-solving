@@ -18,7 +18,7 @@ function would provide a better experience when browsing through the long list o
 - There are different category of activities available, they are
 - In-reach Programme
 - Art Bazaar
-- Guided T our
+- Guided Tour
 - For Guided Tour activities, there is a limit of maximum number of participants which are
 configured individually depending on each activity.
 
