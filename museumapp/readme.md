@@ -21,7 +21,8 @@ function would provide a better experience when browsing through the long list o
 - Guided T our
 - For Guided Tour activities, there is a limit of maximum number of participants which are
 configured individually depending on each activity.
-Technical Requirements
+
+### Technical Requirements
 - Mr. Power has his own Ui/UX preferences, please refer to sample prototype screen as
 provided in Appendix 1 below, and build the mobile application matching to the prototype
 as close as possible.
