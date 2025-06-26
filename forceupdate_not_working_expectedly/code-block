@@ -1,13 +1,4 @@
 Future<RemoteConfigResponse> handleRemoteConfigUpdate() async {
-    ///current app information:
-    ///provided currentAppVersion == 1.0.2
-
-    ///remote config setting information:
-    ///forceUpdateVersion == 1.0.4
-    ///optionalUpdateVersion == 1.0.3
-    ///forceUpdateMessage = "Please update your app now to continue enjoy the services."
-    ///optionalVersionUpdateMessage = "There is new version available, would you like to update now?"
-    
     await _rc.activate();
     final currentVersion = Version.parse(await currentVersionName);
     final updateUrl = _rc.getString(RemoteConfigs.urlUpdate.value);
