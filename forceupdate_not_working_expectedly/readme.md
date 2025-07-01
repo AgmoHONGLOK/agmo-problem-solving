@@ -1,17 +1,43 @@
-# Situation:
-The Agmo Energy team recently released version v1.0.4 of the PowerEnergy App to address critical login issues. A remote config setting was applied to enforce a mandatory update for all users to this latest version.
+# 🛠️ Technical Investigation Task: Force Update Not Triggering
 
-However, reports have surfaced that some users are not receiving the force update prompt and are still able to use the outdated version, bypassing the intended enforcement.
+## 📖 Situation
 
-# Task:
-You're brought in as a senior mobile engineer to quickly investigate, identify the root cause, and resolve this issue. The resolution must be done urgently, as the login bug in older versions affects core functionality.
+The **Agmo Energy** team recently released version `v1.0.4` of the **PowerEnergy App** to fix a critical login issue. To ensure all users receive this fix, a **Remote Config** setting was deployed to **enforce a mandatory update** to version `1.0.4`.
 
-## User information:
-- app version: 1.0.2
-- device: Samsung Galaxy Fold, Android 15
+Despite this, some users have reported that they **did not receive the force update prompt** and are still able to use older versions like `1.0.2`, effectively **bypassing the update enforcement**. This is a high-priority issue, as older versions contain a login bug that affects core functionality.
 
-## Remote config settings:
-- forceUpdateVersion: 1.0.4
-- optionalUpdateVersion: 1.0.3
-- forceUpdateMessage: "Please update your app now to continue enjoy the services."
-- optionalVersionUpdateMessage: "There is new version available, would you like to update now?"
+---
+
+## 🔍 Your Task
+
+You are brought in as a **Mobile Engineer** to:
+
+1. **Investigate the issue**
+   - Determine why the force update prompt is not appearing for some users
+   - Consider platform/version-specific behavior, caching, or configuration pitfalls
+
+2. **Identify the root cause**
+
+3. **Propose and implement a resolution**
+   - Suggest changes in logic, config handling, or any improvements needed
+   - Share a clear explanation of your findings and solution
+
+---
+
+## 👤 Affected User Info
+
+- **App version**: `1.0.2`  
+- **Device**: Samsung Galaxy Fold  
+- **OS**: Android 15  
+
+---
+
+## 🧩 Remote Config Settings
+
+```json
+{
+  "forceUpdateVersion": "1.0.4",
+  "optionalUpdateVersion": "1.0.3",
+  "forceUpdateMessage": "Please update your app now to continue enjoy the services.",
+  "optionalVersionUpdateMessage": "There is new version available, would you like to update now?"
+}
